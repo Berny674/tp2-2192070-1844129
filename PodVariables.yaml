@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysqlVariable
+spec:
+  containers:
+  - name: mysqlVariable-Container
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: "soleil01"
