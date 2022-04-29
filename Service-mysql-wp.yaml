@@ -8,5 +8,7 @@ spec:
   selector:
     app: wordpress
   ports:
-  - port: 3306
+  - protocol: TCP
+    port: 3306
+  type: NodePort
   
