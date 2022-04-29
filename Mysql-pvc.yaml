@@ -7,8 +7,8 @@ metadata:
     app: wordpress
 spec:
   storageClassName: manual
-  accesModes:
-    - ReadWriteMany
+  accessModes:
+  - ReadWriteMany
   resources:
     requests:
       storage: 500Mi
