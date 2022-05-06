@@ -3,13 +3,14 @@ kind: Service
 metadata:
   name: wordpress-mysqlv2
   labels:
-    app: mysql
+    app: wordpress
+    tier: mysql
 spec:
   selector:
-    app: mysql
+    app: wordpress
+    tier: mysql
   ports:
-    - protocol: TCP
-      port: 3306
+    - port: 3306
       nodePort: 30033
       targetPort: 3306
   type: NodePort
